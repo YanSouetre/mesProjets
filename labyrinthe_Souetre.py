@@ -2,6 +2,10 @@ import random
 import time
 
 """
+Le but de cet exercice est de créer un labyrinthe dans lequel un héros (I. A) va devoir se déplacer et évitant le plus d'obstacles possible (avec la possibilité de les traverser)
+en sachant que chacun des déplacements du héros, lui ajoute des points(Les obstacles ajoutés plus de points que les cases vides). Le héros doit arriver à la sortie en ayant
+le moins de points possible.
+
 La fonction generate prend en parametre la longueur du labyrinthe (b)
 et créer un dictionnaire (dico) avec les cordonnées (i, j) de chaque formes (▲ = hero, 0 = eau, ▓ = mur, ■ = bordure)
 """
@@ -36,7 +40,7 @@ def afficher(b,dico): # Fonction pour afficher la map
              
 """
 La fonction deplacer permet de deplacer le hero dans 5 directions (haut-droite, droite, bas-droite, bas, bas-gauche)
-en allant de preference sur les sans obstacles puis celles avec un mur et en dernier celles avec de l'eau
+en allant de preference sur les cases sans obstacles puis celles avec un mur et en dernier celles avec de l'eau
 """
 
 def deplacer(b,dico):
