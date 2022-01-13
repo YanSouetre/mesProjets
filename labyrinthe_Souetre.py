@@ -2,8 +2,8 @@ import random
 import time
 
 """
-Le but de cet exercice est de créer un labyrinthe dans lequel un héros (I. A) va devoir se déplacer et évitant le plus d'obstacles possible (avec la possibilité de les traverser)
-en sachant que chacun des déplacements du héros, lui ajoute des points(Les obstacles ajoutés plus de points que les cases vides). Le héros doit arriver à la sortie en ayant
+Le but de cet exercice est de créer un labyrinthe dans lequel un héros (I. A) va devoir se déplacer en évitant le plus d'obstacles possible (avec la possibilité de les traverser)
+en sachant que chacun des déplacements du héros, lui ajoute des points(Les obstacles ajoutes plus de points que les cases vides). Le héros doit arriver à la sortie en ayant
 le moins de points possible.
 
 La fonction generate prend en parametre la longueur du labyrinthe (b)
