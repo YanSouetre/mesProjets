@@ -1,0 +1,76 @@
+
+/* Début de la page de connexion */
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input {
+    border-radius: 10px;
+    border: solid;
+    box-shadow: 0px 0px 10px 2px rgb(14, 14, 61);
+    
+    display: inline block;
+}
+
+.page {
+    font-family: 'Staatliches', cursive;
+    color: honeydew;
+    border: 0.4rem solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 10px 5px white;
+    margin-top: 100px;
+    border-radius: 120px;
+    text-align: center;
+}
+
+.liens {
+    color: rgb(1, 189, 223);
+}
+.liens:visited {
+    color: #6d64e6;
+}
+
+button {
+    padding-left: -10px;
+    font-size: 1em;
+    padding: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: #fff;
+    border: 2px solid #06D85F;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+button:hover {
+    background: #06D85F;
+}
+#exple {
+    vertical-align: left;
+
+}
+
+
+#eye {
+    background-color: rgba(255, 255, 255, 0.138);
+    height: 20px;
+    vertical-align: middle;
+    cursor:pointer;
+    border-radius: 20%;
+    box-shadow: 0px 0px 60px 7px #0ff;
+
+}
+
+.pl {
+    display: block;
+    justify-content: center;
+    margin-left: 35px;
+}
+
+
+/* Fin de la page de connexion */

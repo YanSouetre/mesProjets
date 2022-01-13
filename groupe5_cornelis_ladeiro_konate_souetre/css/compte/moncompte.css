@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+/* debut du code css de moncompte */
+
+/* div rassemblant les deux div ci-dessous */
+.page {
+    font-family: 'Staatliches', cursive;
+    color: honeydew;
+    border: 0.4rem solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 10px 5px white;
+    margin-top: 100px;
+    margin: 50px 50px 0px 50px;
+    border-radius: 120px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* div de gauche */
+.profil {
+    margin: 50px;
+    padding: 100px;
+    width: 350px;
+    height: 220px;
+}
+
+/* div de droite */
+.photo {
+    margin: 50px;
+    padding: 100px;
+    width: 300px;
+    height: 300px;
+}
+
+h1 {
+    text-decoration:underline;
+    margin-bottom:45px;
+}
+
+/* effets de boutons */
+.button {
+    padding-left: -10px;
+    font-size: 1em;
+    padding: 5px;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: #fff;
+    border: 2px solid #06D85F;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    background: #06D85F;
+}
+
+.button2 {
+    padding-left: -10px;
+    font-size: 1em;
+    padding: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
+    color: #fff;
+    border: 2px solid #06D85F;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.button2:hover {
+    background: #06D85F;
+}
+
+/* adapté au mode téléphone à partir de 800px */
+@media screen and (max-width: 900px) {
+    /* les deux divs de .page seront l'une en dessous de l'autre */
+    .page {
+        display:inline;
+        justify-content:unset;
+        background-color: none;
+        box-shadow: none;
+        opacity: 0%;
+    }
+    .profil {
+        margin: 0px;
+        margin-left: 30px;
+        padding: 0px;
+    }
+    .photo {
+        margin: 200px 0px 0px 55px;
+        padding: 0px;
+    }
+}
+
+/* fin du code css de moncompte */
+
+/* fin du code css de moncompte */

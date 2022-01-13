@@ -1,0 +1,201 @@
+body {
+    background-image: url("../../images/back.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/* Début de la barre de navigation */
+@media screen and (min-width: 700px) {
+    .nav2 {
+        display: none;
+        
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(51, 51, 51, 0.85);
+        border-radius: 0 0 0px 0px;
+        
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        
+        background-color: #111;
+        
+    }
+
+    .btn {
+        float: right;
+    }
+
+    .logoNav {
+        float: left;
+    }
+
+    
+
+
+}
+/* Fin de la barre de navigation */
+@media screen and (max-width: 700px) {
+    .fond2 {
+        background-color: #333;
+        height: 75px;
+        width: auto;
+    }
+    #logoburg {
+        margin-top: -50px;
+        margin-left: -50px;
+        width: 60px;
+        height: 60px;
+    }
+    #checkbox {
+        margin-top: -50px;
+        margin-left: -50px;
+        width: 60px;
+        height: 60px;
+    }
+    .menu {
+        display: none;
+    }
+    #menuToggle
+    {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+    }
+
+    #menuToggle a
+    {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover
+    {
+    color: tomato;
+    }
+
+
+    #menuToggle input
+    {
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
+    }
+
+
+    #menuToggle span
+    {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #cdcdcd00;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child
+    {
+    transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2)
+    {
+    transform-origin: 0% 100%;
+    }
+
+
+    #menuToggle input:checked ~ span
+    {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #23232300;
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+    transform: rotate(-45deg) translate(0, -1px);
+    }
+
+
+    #menu
+    {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li
+    {
+    padding: 10px 0;
+    font-size: 22px;
+    }
+
+    #menuToggle input:checked ~ ul
+    {
+    transform: none;
+    }
+}
