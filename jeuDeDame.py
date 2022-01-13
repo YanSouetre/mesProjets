@@ -171,8 +171,6 @@ def manger(couleur, dico, tab , tab1, rep0 , rep1):
     b_droite = False
     bouffe = True
     while(bouffe == True):
-        if():
-            pass
         for i in range(97,107):
             for j in range(1,11):
                 if(rep0 == i and rep1 == j):
