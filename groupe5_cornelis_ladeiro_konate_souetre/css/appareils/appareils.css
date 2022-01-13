@@ -1,0 +1,809 @@
+
+/* CHAMBRE TEXTE */
+#police {
+  text-justify:  solid;
+  font-family: Serif;
+  color: #ccc;
+  height: 45px;
+  font-size: 40px;
+  position: relative;
+  height: 65px;
+  z-index: 1;
+}
+div h2  {
+  display: table-row;
+}
+
+
+
+
+
+/* listes des pieces*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
+.wordCarousel {
+  font-size: 36px;
+  font-weight: 100;
+  color: #939393;
+  margin-top: 50px;
+  margin-bottom: -20px;
+  }
+
+.wordCarousel div .li {
+  font-family: Serif;
+  color: #ccc;
+  font-weight: 700;
+  height: 45px;
+  display: block;
+}
+
+
+/* card des appa  ampoule, SALON ...... etc  */
+/* état en ON */
+.tile {
+  width: 250px;
+  height: 250px;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 50px;
+  margin-top: 200px;
+  position: relative;
+  z-index: 5;
+  float: left;
+}
+.tile .front {
+  border-radius: 50px;
+  margin-top: -150px;
+  display: block;
+  display: inline-block;
+  width: 250px;
+  height: 350px;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+}
+.tile h3, .tile p, .tile a {
+  padding: 0 20px;
+}
+.tile img {
+  max-height: 130px;
+
+}
+.tile .front {
+  background: rgba(55, 197, 8, 0.5);
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+.tile .front h3 {
+  font-size: 2em;
+  color: white;
+  text-shadow: 0 0 5px #000;
+  margin-top: 5px;
+  margin-bottom: 1.5em;
+}
+
+/* état en OFF */
+.tile .front1 {
+  border-radius: 50px;
+  margin-top: -150px;
+  display: block;
+  display: inline-block;
+  width: 250px;
+  height: 350px;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.tile .front1 {
+  background: rgba(197, 8, 8, 0.5);
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+.tile .front1 h3 {
+  font-size: 2em;
+  color: white;
+  text-shadow: 0 0 5px #000;
+  margin-top: 5px;
+  margin-bottom: 1.5em;
+}
+
+/* état en STOP */
+.tile .front2 {
+  border-radius: 50px;
+  margin-top: -150px;
+  display: block;
+  display: inline-block;
+  width: 250px;
+  height: 350px;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.tile .front2 {
+  background: rgba(197, 106, 8, 0.5);
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+.tile .front2 h3 {
+  font-size: 2em;
+  color: white;
+  text-shadow: 0 0 5px #000;
+  margin-top: 5px;
+  margin-bottom: 1.5em;
+}
+
+/* button lien vers controle  LES PARAMETRES */
+
+
+.buttons a {
+  text-decoration: none;
+  color: white;
+  background: #027eb9;
+  position: relative;
+  padding: 16px;
+  font-size: 20px;
+  border-radius: 70px;
+  box-shadow: 0px 7px 0px 0px #2d3267, 0px 0px 20px 0px #bbb;
+  transition: all 0.2s;
+}
+
+.buttons a:active {
+
+  box-shadow: 0px 0px 0px 0px #2d3267
+}
+
+
+
+.contents p {
+  margin-top: -20px;
+  margin-bottom: 50px;
+  color: grey;
+}
+
+
+
+/* BOUTON AJOUTER UNE PIECE vert foncé */
+.box {
+  width: 20%;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0);
+  padding: 30px;
+  padding-left: 5px;
+  border-radius: 20px/50px;
+}
+
+.bouttonss {
+  padding-left: -10px;
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.bouttonss:hover {
+  background: #06D85F;
+}
+/* BOUTON SUP UNE PIECE  rouge foncé */
+.bouttonss1 {
+  margin-top: -12px;
+  position: absolute;
+  padding-right: 0px;
+  margin-left: 7rem;
+  padding-left: 10px;
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #d80606;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.bouttonss1:hover {
+  background: #e60f00;
+}
+
+/* button modifie le nom de la piece */
+.bouttonss2 {
+  margin-top: -12px;
+  position: absolute;
+  padding-right: 0px;
+  margin-left: 14rem;
+  padding-left: 10px;
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #d85006;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.bouttonss2:hover {
+  background: #d85006;
+}
+/* POPUP DE AJOUTER UNE PIECE  */
+.overlay {
+  z-index: 7;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  padding-right: 10%;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 0.1s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 0.2s;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+     width: 70%;
+  }
+}
+/* POPUP DE SUP UNE PIECE  */
+.popup2 {
+  margin: 70px auto;
+  padding: 20px;
+  padding-right: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 0.1s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup2 .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup2 .close:hover {
+  color:  #eb3131;
+}
+
+
+@media screen and (max-width: 768px){
+  .box{
+    width: 70%;
+  }
+  .popup2{
+    width: 80%;
+    height: 20%;
+    padding-bottom : 20%;
+  }
+}
+
+/* POPUP DE MODIF PIECE  */
+.popup3 {
+  margin: 70px auto;
+  padding: 20px;
+  padding-right: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 0.1s ease-in-out;
+}
+
+.popup3 h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup3 .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup3 .close:hover {
+  color:  #d85006;
+}
+
+
+@media screen and (max-width: 768px){
+  .box{
+    width: 70%;
+  }
+  .popup3{
+    width: 80%;
+    height: 20%;
+    padding-bottom : 20%;
+  }
+}
+
+/* NOM DE LA PIECE DANS LE POPUP AJOUTE UNE PIECE  */
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  padding-right: 0px;
+  margin-top: 0px;
+  width: 50%;
+}
+
+.form__field {
+  margin-top: 0px;
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #11998e;
+  padding: 7px 0;
+  padding-right: 0px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 10px;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+
+/* modification piece label  */
+.form__group2 {
+  position: relative;
+  padding: 15px 0 0;
+  padding-right: 0px;
+  margin-top: 30px;
+  margin-left: 25%;
+  display: block;
+  justify-content: center;
+  width: 50%;
+}
+
+.form__field2 {
+  margin-top: 0px;
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: rgba(252,176,69,1);
+  padding: 7px 0;
+  padding-right: 0px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field2::placeholder {
+  color: transparent;
+}
+.form__field2:placeholder-shown ~ .form__label2 {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label2 {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 10px;
+  color: #9b9b9b;
+}
+
+.form__field2:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image:  linear-gradient(90deg, rgba(131,58,180,0.7231267507002801) 0%, rgba(253,29,29,1) 12%, rgba(252,176,69,1) 100%);
+  border-image-slice: 1;
+}
+.form__field2:focus ~ .form__label2 {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color:rgba(252,176,69,1);
+  font-weight: 700;
+}
+
+/* BOUTON AJOUTER DANS LE POPUP DE AJOUTER UNE PIECE  */
+.skin1 button {
+  border: 3px solid #06D85F;
+  border-radius: 20px;
+  color: #06D85F;
+  background-color: #027fb900;
+  margin-left: 70%;
+}
+.skin1 button:hover {
+  border-color: #ad33ff;
+  color: #ad33ff;
+  background-color: #00556600;
+}
+.skin1 button:active {
+  border-color: #33ff8f;
+  color: #33ddff;
+  background-color: #33fff5;
+}
+
+.skin12 button {
+  border: 3px solid #06D85F;
+  border-radius: 20px;
+  color: #06D85F;
+  background-color: #027fb900;
+  margin-left: 70%;
+  margin-top: 10px;
+}
+.skin12 button:hover {
+  border-color: #ad33ff;
+  color: #ad33ff;
+  background-color: #00556600;
+}
+.skin12 button:active {
+  border-color: #33ff8f;
+  color: #33ddff;
+  background-color: #33fff5;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+
+button {
+  outline: 0;
+}
+
+
+button {
+  font-weight: 500;
+  background: transparent;
+  min-width: 100px;
+  border-radius: 8px;
+  font-size: 15px;
+  display: inline-block;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+
+@media only screen and (max-width: 767px) {
+  button {
+    min-width: 80px;
+  }
+}
+
+
+
+/* BOUTON SUPPRIMER DANS LE POPUP DE SUPPRIMER UNE PIECE  */
+.skin2 button {
+  border-radius: 20px;
+  border: 3px solid #d80606;
+  color: #d80606;
+  background-color: #84015200;
+  margin-left: 70%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.skin2 button:hover {
+  border-color: #ad33ff;
+  color: #ad33ff;
+  background-color: #b7017100;
+}
+.skin2 button:active {
+  border-color: #d80606;
+  color: #d80606;
+  background-color: #b70701;
+}
+
+.skin2 button {
+  border-radius: 20px;
+  border: 3px solid #d80606;
+  color: #d80606;
+  background-color: #84015200;
+  margin-left: 70%;
+  margin-top: 30px;
+}
+.skin2 button:hover {
+  border-color: #ad33ff;
+  color: #ad33ff;
+  background-color: #b7017100;
+}
+.skin2 button:active {
+  border-color: #d80606;
+  color: #d80606;
+  background-color: #b70701;
+}
+
+.skin3 button {
+  border-radius: 20px;
+  border: 3px solid #d85006;
+  color: #d85006;
+  background-color: #84015200;
+  margin-left: 70%;
+  margin-top: 30px;
+}
+.skin3 button:hover {
+  border-color: #ad33ff;
+  color: #ad33ff;
+  background-color: #b7017100;
+}
+.skin3 button:active {
+  border-color: #d85006;
+  color: #d85006;
+  background-color: #d82606;
+}
+
+
+
+/* BTN AJOUTER UN APPA DANS SALON */
+.box2 {
+  margin-top: -1%;
+  padding: 30px;
+  padding-right: 60px;
+  padding-left: 15px;
+  border-radius: 20px/50px;
+  margin-bottom: 100px;
+  width: 90%;
+  height: 50%;
+  z-index: 1;
+  float: left;
+}
+
+.button45 {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button45:hover {
+  background: #06D85F;
+}
+
+.bouttonss1 {
+  margin-top: -12px;
+  position: absolute;
+  padding-right: 0px;
+  margin-left: 2rem;
+  padding-left: 10px;
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #d80606;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.bouttonss1:hover {
+  background: #e60f00;
+}
+
+/* POPUP AJOUTER UN APPA DANS SALON */
+
+.overlay45 {
+  z-index: 7;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay45:target {
+  visibility: visible;
+  opacity: 1;
+}
+/* autre changements dans le .php ligne 176 */
+/* BTN SUPP UN APPA DANS SALON */
+.box3 {
+  margin-top: -40px;
+  width: 300px;
+  padding: 30px;
+  padding-right: 60px;
+  padding-left: 10px;
+  border-radius: 20px/50px;
+  margin-bottom: 150px;
+} 
+
+.button46 {
+  margin-top: -12px;
+  position: absolute;
+  padding-right: 0px;
+  margin-left: 2rem;
+  padding-left: 10px;
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #d80606;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button46:hover {
+  background: #e60f00;
+}
+
+
+/* POPUP SUPP APPA DANS SALON  */
+.overlay46 {
+  z-index: 7;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay46:target {
+  visibility: visible;
+  opacity: 1;
+}
+/* autres changements dans le .php ligne 261 */
+/* SELECTOR "CHOISISSEZ UN APPA" DANS LES POP UP */
+.content {
+
+  margin-top: 40px;
+}
+.custom-select {
+  position: relative;
+  display: block;
+  max-width: 400px;
+  min-width: 180px;
+  margin: 0 auto;
+  border: 1px solid #3C1C78;
+  background-color: #16013E;
+  z-index: 10;
+
+}
+.custom-select select {
+  border: none;
+  outline: none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  padding: 12px 55px 15px 15px;
+  font-size: 14px;
+  color: #714BB9;
+}
+.custom-select:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  line-height: 38px;
+  content: "∨";
+  text-align: center;
+  color: #714BB9;
+  font-size: 24px;
+  border-left: 1px solid #3C1C78;
+  z-index: -1;
+}
+
+
+
+
+.div {
+  display: flex;
+  justify-content: left;
+  margin-left: -5%;
+  font-family: Serif;
+  color: #ccc;
+  height: 45px;
+  font-size: 40px;
+  position: relative;
+  height: 65px;
+  margin-left: 10px;
+  z-index: -1;
+  margin-top: -30px;
+}
+/* FIN  */

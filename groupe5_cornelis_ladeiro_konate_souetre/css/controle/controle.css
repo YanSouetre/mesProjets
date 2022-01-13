@@ -1,0 +1,169 @@
+
+/* Fin de la page contrôle */
+
+ul {
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+main {
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+#pasObjets{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.titre{
+    border: solid white;
+    border-left: transparent;
+    border-right: transparent;
+    width: 400px;
+    margin: 70px auto;
+}
+
+
+.params{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.piece {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    border: solid white;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+}
+
+.time {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 5px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 95vw;
+    height: 500px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.logo {
+    margin: 10px;
+    height: 75px;
+    width: 75px;
+    vertical-align: middle;
+}
+
+/* boutons ON/OFF de toute la page */
+.btnOnOff {    
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: white; 
+    border: 2px solid white;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btnOnOff:active {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btnRetour {    /* CSS des bouttons pour revenir vers "mes appareils"  */
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white; 
+    border: 2px solid white;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btnRetour:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+}
+
+/********************************
+* Carousel styles
+*********************************/
+.carousel {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.carousel-items {
+    background: transparent;
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+
+    
+}
+
+.carousel-item {
+    flex: 1 0 500px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    background-color: transparent;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
+}
+
+
+/********************************
+* Breakpoints
+*********************************/
+@media screen and (min-width: 576px) {
+    .carousel-item {
+        flex-basis: 300px;
+    }
+}
